@@ -6,26 +6,27 @@
         <meta charset="utf-8" />
         <title>TTM Mobile</title>
         <meta name="viewport" content="width=device-width" />
+        <link href="http://188.165.240.219/ttmmobile/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-        <link href="css/mobileCss.css" rel="stylesheet"/>
-		<link href="css/css.css" rel="stylesheet"/>
+        <link href="http://188.165.240.219/ttmmobile/Content/mobileCss?v=KQl85KHPkPBOR4laFwZw6nYiD6w74NNoY3i-zU-BqtY1" rel="stylesheet"/>
+		<link href="http://188.165.240.219/ttmmobile/Content/css?v=fflyC6wbnEnxqDrJc7BMeUfMF2IDDeoPiz2blYNgGNI1" rel="stylesheet"/>
 
-        <script src="js/modernizr.js"></script>
+        <script src="http://188.165.240.219/ttmmobile/bundles/modernizr?v=rGcoDow97GYrNMSwHq7xCCjlcB3UIY4_OhPRc6BBSQA1"></script>
 
-		<link rel="stylesheet" type="text/css" href="css/jqm-datebox.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" />
 		
-        <script src="js/jquery.js"></script>
+        <script src="http://188.165.240.219/ttmmobile/bundles/jquery?v=cHVMcRdrMfu1F2tLhaIWMD-0fim1pr_ZIJqJHLWEL0I1"></script>
 
-        <script src="js/jquerymobile.js"></script>
+        <script src="http://188.165.240.219/ttmmobile/bundles/jquerymobile?v=SZx2vqyvrw9TcRmzlCN5koCw7EM0RrYnOw6QpBHXgzU1"></script>
 
         <script src="js/js.js"></script>
 
-        <script src="js/jquery.ui.js"></script>
+        <script src="http://188.165.240.219/ttmmobile/bundles/jquery.ui?v=SchgSB8fPreyoVSn4EONj9T7Otb9HLb2AYGjTV6LdVQ1"></script>
 
-         <script type="text/javascript" src="js/jqm-datebox.core.min.js"></script>
-        <script type="text/javascript" src="js/jqm-datebox.mode.calbox.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile.datebox.i8n.fr.js"></script>
+         <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.core.min.js"></script>
+        <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.mode.calbox.min.js"></script>
+        <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i18n.en_US.utf8.js"></script>
+        <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/i18n/jquery.mobile.datebox.i8n.fr.js"></script>
         
     </head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -37,10 +38,10 @@
                 <span style="margin-left:2%; color:#fff;" data-mini='true'><a style="color:#fff; font-size:small; text-decoration:none;" href="">Bienvenue : </a></span>
                 <span style="margin-left:60%; color:#fff; text-align:right;" data-mini='true'><a style="color:#fff; font-size:small; text-decoration:none;" id="logout" href=""></a></span>
           </div>
-        <div data-role="content" data-mini="true" style="background-image: url('img/background.png');">
+        <div data-role="content" data-mini="true" style="background-image: url('http://188.165.240.219/ttmmobile/Content/images/background.png');">
             <div data-inset="true" data-mini="true" style="margin-top:10px;">
-               <a href="" title=""><img data-mini='true' alt="" height="40" src="img/logo.png" /></a><br />
-               <span data-mini='true'><b>17/12/2013</b></span>
+               <a href="" title=""><img data-mini='true' alt="" height="40" src="http://188.165.240.219/ttmmobile/Content/images/logo.png" /></a><br />
+               <span data-mini='true'><b>18/12/2013</b></span>
             </div>
             <div data-role="content" data-mini="true">
     <center>
@@ -64,8 +65,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("#login").click(function () {
-            //alert("ok");
-            $.fn.LogIn();
+            document.location.href = "page2.html";
         });
 
         $("#password, #username").enterInput();

@@ -6,19 +6,20 @@
         <meta charset="utf-8" />
         <title>TTM Mobile</title>
         <meta name="viewport" content="width=device-width" />
+        <link href="http://188.165.240.219/ttmmobile/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-        <link href="css/mobileCss.css" rel="stylesheet"/>
-		<link href="css/css.css" rel="stylesheet"/>
+        <link href="http://188.165.240.219/ttmmobile/Content/mobileCss?v=KQl85KHPkPBOR4laFwZw6nYiD6w74NNoY3i-zU-BqtY1" rel="stylesheet"/>
+		<link href="http://188.165.240.219/ttmmobile/Content/css?v=fflyC6wbnEnxqDrJc7BMeUfMF2IDDeoPiz2blYNgGNI1" rel="stylesheet"/>
 
-        <script src="js/modernizr.js"></script>
+        <script src="http://188.165.240.219/ttmmobile/bundles/modernizr?v=rGcoDow97GYrNMSwHq7xCCjlcB3UIY4_OhPRc6BBSQA1"></script>
 
-		<link rel="stylesheet" type="text/css" href="css/jqm-datebox.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" />
 		
-        <script src="js/jquery.js"></script>
+        <script src="http://188.165.240.219/ttmmobile/bundles/jquery?v=cHVMcRdrMfu1F2tLhaIWMD-0fim1pr_ZIJqJHLWEL0I1"></script>
 
         <script src="http://188.165.240.219/ttmmobile/bundles/jquerymobile?v=SZx2vqyvrw9TcRmzlCN5koCw7EM0RrYnOw6QpBHXgzU1"></script>
 
-        <script src="http://188.165.240.219/ttmmobile/bundles/js?v=87BVd3AVcf565WwZCRZzrHXJD8p44rKNxortYFtei8s1"></script>
+        <script src="js/js.js"></script>
 
         <script src="http://188.165.240.219/ttmmobile/bundles/jquery.ui?v=SchgSB8fPreyoVSn4EONj9T7Otb9HLb2AYGjTV6LdVQ1"></script>
 
@@ -40,54 +41,26 @@
         <div data-role="content" data-mini="true" style="background-image: url('http://188.165.240.219/ttmmobile/Content/images/background.png');">
             <div data-inset="true" data-mini="true" style="margin-top:10px;">
                <a href="" title=""><img data-mini='true' alt="" height="40" src="http://188.165.240.219/ttmmobile/Content/images/logo.png" /></a><br />
-               <span data-mini='true'><b>17/12/2013</b></span>
+               <span data-mini='true'><b>18/12/2013</b></span>
             </div>
             <div data-role="content" data-mini="true">
-    <center>
-        <h3 style="color:#000;" data-mini="true">Connexion</h3>
-    </center>
-    <p>
-        <label for="username" data-mini="true"><strong style="color:#000;" data-mini="true">Nom d'utilisateur</strong></label>
-        <input type="text" data-mini="true" id="username" name="username" class="stInput" />
-    </p>
-
-    <p>
-        <label for="password" data-mini="true"><strong style="color:#000;" data-mini="true">Mot de passe</strong></label>
-        <input type="password" data-mini="true" id="password" name="password" class="stInput" />
-    </p>
-
+				<center>
+					<h3 style="color:#000;" data-mini="true">Page2</h3>
+				</center>
     
-    <p>
-        <input type="button" data-mini="true" id="login" class="blueBtn" value="Connexion" />
+	    <p>
+        <input type="button" data-mini="true" id="login" class="blueBtn" value="Retour" />
     </p>
-</div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#login").click(function () {
-            //alert("ok");
-            $.fn.LogIn();
-        });
-
-        $("#password, #username").enterInput();
-    });
-</script>
+			</div>
         </div>
     </div>
-     <script type="text/javascript">
-        $(document).ready(function () {
-            if ("" != "") {
-                $("#logout").html("Déconnexion");
-                $("#logout").attr("title", "Déconnexion");
-            }
-
-            $("#logout").click(function () {
-                if ("" != "") {
-                    var msg = confirm("Voullez-vous vraiment vous déconnectez ?");
-                    if (msg == false) return;
-                    $.fn.LogOut();
-                }
-            });
+  <script type="text/javascript">
+    $(document).ready(function () {
+        $("#login").click(function () {
+            document.location.href = "index.html";
         });
-        </script>
+
+    });
+</script>
  </body>
 </html>
